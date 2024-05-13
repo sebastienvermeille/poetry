@@ -9,11 +9,10 @@
 - id: poetry-lock
   name: poetry-lock
   description: run poetry lock to update lock file
-  entry: poetry lock
+  entry: poetry check --lock
   language: python
   pass_filenames: false
-  #files: ^(.*/)?(poetry\.lock|pyproject\.toml)$
-  files: ^poetry.lock$
+  files: ^(.*/)?(poetry\.lock|pyproject\.toml)$
 
 - id: poetry-export
   name: poetry-export
